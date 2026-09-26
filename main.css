@@ -1,0 +1,157 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.nav__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 0;
+}
+
+.nav_ul {
+  display: flex;
+  gap: 50px;
+}
+
+.nav__logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.nav_btn {
+  display: flex;
+  gap: 24px;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav_btn2 {
+  border-radius: 40px;
+  padding: 20px, 70px;
+}
+
+.nav_btn3 {
+  border-radius: 40%;
+  padding: 20px 70px;
+  background: linear-gradient(rgba(129, 118, 175, 1), rgba(192, 183, 232, 1));
+}
+
+.card1{
+  display: flex;
+  justify-content: space-between;
+}
+
+.card{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card2{
+  
+  background-color: rgba(58, 52, 86, 0.95);
+  border-radius: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cu{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card3{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card4{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title{
+  color: aliceblue;
+}
+
+body{
+  background-color:rgba(58, 52, 86, 0.95) ;
+}
+
+.card7{
+  background-image:url(./Mask\ group\ \(2\).png) ;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 45px 50px 0px 60px;
+  
+}
+
+.btn3{
+  padding: 24px 10px;
+  border-radius: 40px;
+  background-color: rgba(137, 43, 226, 0);
+}
+
+.img{
+  border-radius: 50%;
+}
+
+
+.ip{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.yui{
+  width: 1000px;
+  padding: 23px,34px,56px,23px;
+background: radial-gradient(50% 50% at 50% 50%, #403A5F 0%, #211E2E 100%);
+
+}
+
+.inp4{
+  padding:0px 34px;
+  border-radius: 40px;
+  height: 210px;
+  width: 1000px;
+  background-color: #403a5f09;
+  
+
+}
+.inp3{
+  padding:0px 34px;
+  width:524px;
+  height: 72px;
+  border-radius: 40px;
+  background-color: #403a5f09;}
+.inp2{
+  padding:0px 104px;
+  width:1000px;
+  border-radius: 40px;
+  height: 72px;
+  background-color: #403a5f09;}
+
+  .virtual{
+    width: 400px;
+  }
