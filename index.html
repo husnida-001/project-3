@@ -7,216 +7,385 @@
     <link rel="stylesheet" href="main.css" />
   </head>
   <body>
-    <header>
-      <nav class="nav">
-        <div class="container">
-          <div class="nav__wrapper">
-            <div class="nav__logo">
-              <img src="./Vector.svg" alt="logo" />
-            </div>
-            <ul class="nav_ul">
-              <li><a class="title" href="#">about</a></li>
-              <li><a class="title" href="#">services</a></li>
-              <li><a class="title" href="#">technologies</a></li>
-              <li><a class="title" href="#">how to</a></li>
-            </ul>
-            <div class="nav_btn">
-              <button class="nav_btn2">CONTACT US</button>
-              <button class="nav_btn3">JOIN HYDRA</button>
-            </div>
-          </div>
-        </div>
+  ```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HYDRA VR</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./index.css" />
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container nav">
+
+      <a href="#" class="logo">
+        <span class="logo-icon">H</span>
+        <span>HYDRA</span>
+      </a>
+
+      <nav class="nav-links">
+        <a href="#about">ABOUT</a>
+        <a href="#services">SERVICES</a>
+        <a href="#technology">TECHNOLOGIES</a>
+        <a href="#how">HOW TO</a>
       </nav>
-    </header>
-    <main>
-      <section class="hero">
 
-        <div class="container">
-          <div class="hero__wrapper">
-            <div class="card1">
-              <div><h1 class="title">Dive Into The Depths <br>Of Virtual really</h1>
-              <p class="title">Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br> 
-sed do eiusmod tempor incididunt ut labore et dolore <br> 
-nisl tincidunt eget. Lectus mauris eros in vitae .</p>
-             <div class="btn"><button class="btn3">BUILD YOUR WORLD</button></div>
-              </div>
-              <div>
-                <img class="virtual" src="./Mask group.png" alt="">
-              </div>
-            </div>
-            <div class="card2">
-              <div class="card">
-                <div>
-                <img src="./Location-Icon.svg" alt="">
-                </div>
-                <div>
-                  <h3 class="title">Pay Us a Visit</h3>
-                  <p class="title">Union St, Seattle, WA 98101, United States</p>
-                </div>
+      <div class="nav-buttons">
+        <a href="#contact" class="btn btn-outline">CONTACT US</a>
+        <a href="#join" class="btn btn-primary">JOIN HYDRA</a>
+      </div>
 
-              </div>
-              <div class="card">
-                <div>
-                <img src="./phone-call.svg" alt="">
-                </div>
-                <div>
-                  <h3 class="title">Give Us a Call</h3>
-                  <p class="title">(110) 1111-1010</p>
-                </div>
-              </div>
-              <div class="card">
-                <div>
-                <img src="./mail.svg" alt="">
-                </div>
-                <div>
-                  <h3 class="title">Send Us a Message</h3>
-                  <p class="title">Contact@HydraVTech.com</p>
-                </div>
-              </div>
-              </div>
+      <button class="menu">☰</button>
+    </div>
+  </header>
+
+
+  <!-- HERO -->
+  <main>
+
+    <section class="hero container">
+
+      <div class="hero-content">
+        <p class="small-title">WELCOME TO THE FUTURE</p>
+
+        <h1>
+          <span>DIVE</span> INTO THE
+          <strong>VIRTUAL REALITY</strong>
+        </h1>
+
+        <p class="hero-text">
+          Experience a new world where technology meets imagination.
+          Discover immersive virtual reality experiences designed
+          to take you beyond reality.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#about" class="btn btn-primary">BUILD YOUR WORLD →</a>
+          <a href="#services" class="discover">DISCOVER MORE ↓</a>
+        </div>
+      </div>
+
+      <div class="hero-image">
+        <div class="image-glow"></div>
+        <img
+          src="https://images.unsplash.com/photo-1622979135225-d2ba269cf1ac?auto=format&fit=crop&w=900&q=85"
+          alt="Virtual Reality"
+        />
+        <div class="floating-card">VR EXPERIENCE</div>
+      </div>
+
+    </section>
+
+
+    <!-- INFO CARDS -->
+    <section class="info container">
+
+      <div class="info-card">
+        <div class="info-icon">📍</div>
+        <div>
+          <h3>VISIT US</h3>
+          <p>Tashkent, Uzbekistan</p>
+        </div>
+      </div>
+
+      <div class="info-card">
+        <div class="info-icon">📞</div>
+        <div>
+          <h3>CALL US</h3>
+          <p>+998 90 123 45 67</p>
+        </div>
+      </div>
+
+      <div class="info-card">
+        <div class="info-icon">✉</div>
+        <div>
+          <h3>EMAIL US</h3>
+          <p>hello@hydravr.com</p>
+        </div>
+      </div>
+
+    </section>
+
+
+    <!-- ABOUT -->
+    <section class="about container" id="about">
+
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">ABOUT HYDRA</p>
+          <h2>THE FUTURE IS <span>NOW</span></h2>
+        </div>
+
+        <p class="heading-description">
+          We create immersive virtual experiences that connect people,
+          creativity and technology.
+        </p>
+      </div>
+
+      <div class="about-grid">
+
+        <div class="about-image">
+          <img
+            src="https://images.unsplash.com/photo-1593508512255-86ab42a8e620?auto=format&fit=crop&w=900&q=85"
+            alt="VR headset"
+          />
+        </div>
+
+        <div class="about-content">
+          <p class="eyebrow">INTRODUCTION</p>
+
+          <h2>WE CREATE <span>NEW REALITIES</span></h2>
+
+          <p>
+            HYDRA is a futuristic virtual reality platform created for
+            people who want to explore something beyond the ordinary.
+          </p>
+
+          <p>
+            From gaming and education to simulations and creative worlds,
+            our technology transforms ideas into unforgettable experiences.
+          </p>
+
+          <a href="#services" class="btn btn-primary">LET'S GET STARTED →</a>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- SERVICES -->
+    <section class="services" id="services">
+      <div class="container">
+
+        <div class="section-heading center">
+          <div>
+            <p class="eyebrow">WHAT WE CREATE</p>
+            <h2>HYDRA <span>SERVICES</span></h2>
           </div>
+
+          <p class="heading-description">
+            Explore innovative experiences powered by virtual reality.
+          </p>
+        </div>
+
+
+        <div class="cards">
+
+          <article class="service-card">
+            <div class="service-image">
+              <img
+                src="https://images.unsplash.com/photo-1592478411213-6153e4ebc07d?auto=format&fit=crop&w=700&q=85"
+                alt="Simulation"
+              />
             </div>
+            <span class="number">01</span>
+            <h3>SIMULATION</h3>
+            <p>
+              Practice real-world situations in a safe and immersive
+              virtual environment.
+            </p>
+            <a href="#contact">EXPLORE →</a>
+          </article>
+
+
+          <article class="service-card">
+            <div class="service-image">
+              <img
+                src="https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=700&q=85"
+                alt="Education"
+              />
+            </div>
+            <span class="number">02</span>
+            <h3>EDUCATION</h3>
+            <p>
+              Learn difficult concepts through interactive and
+              memorable experiences.
+            </p>
+            <a href="#contact">EXPLORE →</a>
+          </article>
+
+
+          <article class="service-card">
+            <div class="service-image">
+              <img
+                src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=700&q=85"
+                alt="Gaming"
+              />
+            </div>
+            <span class="number">03</span>
+            <h3>GAMING</h3>
+            <p>
+              Enter incredible worlds and experience gaming from
+              a completely new perspective.
+            </p>
+            <a href="#contact">EXPLORE →</a>
+          </article>
+
+
+          <article class="service-card">
+            <div class="service-image">
+              <img
+                src="https://images.unsplash.com/photo-1598550476439-6847785fcea6?auto=format&fit=crop&w=700&q=85"
+                alt="Creative VR"
+              />
+            </div>
+            <span class="number">04</span>
+            <h3>CREATIVE VR</h3>
+            <p>
+              Turn imagination into interactive digital worlds
+              and unforgettable experiences.
+            </p>
+            <a href="#contact">EXPLORE →</a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- TECHNOLOGY -->
+    <section class="technology container" id="technology">
+
+      <div class="tech-content">
+        <p class="eyebrow">NEXT GENERATION</p>
+
+        <h2>
+          POWERED BY
+          <span>INNOVATION</span>
+        </h2>
+
+        <p>
+          High-quality visuals, immersive environments and modern
+          VR technology come together to create experiences
+          that feel almost real.
+        </p>
+
+        <div class="tech-stats">
+          <div>
+            <strong>360°</strong>
+            <span>IMMERSION</span>
+          </div>
+
+          <div>
+            <strong>4K</strong>
+            <span>VISUAL QUALITY</span>
+          </div>
+
+          <div>
+            <strong>100%</strong>
+            <span>EXPERIENCE</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="tech-visual">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+
+        <div class="tech-circle">
+          <span>VR</span>
+        </div>
+      </div>
+
+    </section>
+
+
+    <!-- HOW TO -->
+    <section class="how" id="how">
+      <div class="container">
+
+        <div class="section-heading center">
+          <div>
+            <p class="eyebrow">HOW IT WORKS</p>
+            <h2>START YOUR <span>JOURNEY</span></h2>
           </div>
         </div>
 
-      </section>
-      <section class="welcome">
-        <div class="container">
-          <div class="welcome__wrapper">
-            <div class="card3">
-              <div>
-                <h1 class="title">INTRODUCTION</h1>
-                <div class="cu">
-               <div> <h3 class="title">TO HYDRA VR ></h3> </div>
-               <div><img src="./Component 1.svg" alt=""></div>
-                </div>
-              </div>
-              <div>
-                <p class="title">Vitae sapien pellentesque habitant morbi tristique senectus et netus et. Feugiat <br> 
-nibh sed pulvinar proin gravida hendrerit lectus. Mi sit amet mauris commodo <br>
-quis imperdiet massa tincidunt nunc. Viverra aliquet eget sit amet tellus. Ornare <br>
-lectus sit amet est placerat in. Lectus magna fringilla urna porttitor rhoncus vitae.</p>
-              </div>
+        <div class="steps">
 
-            </div>
-            <div class="card4">
-              <div><img  src="./Mask group (1).png" alt=""></div>
-              <div><p class="title">Eget mi proin sed libero enim sed faucibus turpis. Nisl rhoncus mattis rhoncus <br>
-urna neque viverra justo. Vivamus at augue eget arcu dictum. Ultrices gravida <br> 
-dictum fusce ut placerat orci. Aenean et tortor at risus viverra adipiscing at in. <br>
-Mattis aliquam faucibus purus in massa. Est placerat in egestas erat imperdiet <br>
-sed. Consequat semper viverra nam libero justo laoreet sit amet. Aliquam <br>
-etiam erat velit scelerisque in dictum non consectetur a. Laoreet sit amet <br>
-cursus sit amet. Vel eros donec ac odio tempor orci dapibus. Sem nulla pha <br>
-retra diam sit amet nisl suscipit adipiscing bibendum. Leo a diam sollicitudi <br>
-n tempor.</p></div>
-            </div>
+          <div class="step">
+            <span>01</span>
+            <h3>CHOOSE</h3>
+            <p>Pick the experience you want to explore.</p>
           </div>
+
+          <div class="step">
+            <span>02</span>
+            <h3>CONNECT</h3>
+            <p>Put on your headset and enter the virtual world.</p>
+          </div>
+
+          <div class="step">
+            <span>03</span>
+            <h3>EXPLORE</h3>
+            <p>Discover new places and experiences without limits.</p>
+          </div>
+
+          <div class="step">
+            <span>04</span>
+            <h3>ENJOY</h3>
+            <p>Create memories in a world beyond reality.</p>
+          </div>
+
         </div>
-      </section>
-      <section class="praduct">
-        <div class="container">
-          <div class="praduct__wrapper">
-            <div class="card3">
-              <div>
-              <h1 class="title">WHY BUILD</h1>
-              <div class="cu">
-                <div><h3 class="title">WITH HYDRA?</h3></div>
-                <div><img src="./Component 1.svg" alt=""></div>
-              </div>
-              </div>
-              <div><p class="title">Vitae sapien pellentesque habitant morbi tristique senectus et netus et. Feugiat <br> 
-nibh sed pulvinar proin gravida hendrerit lectus. Mi sit amet mauris commodo <br>
-quis imperdiet massa tincidunt nunc. Viverra aliquet eget sit amet tellus. Ornare <br>
-lectus sit amet est placerat in. Lectus magna fringilla urna porttitor rhoncus vitae.</p>
-              </div>
-            </div>
-            <div class="card4">
-            <div class="card6">
-              <img class="img" src="./Mask group (1).jpg" alt="">
-              <h3 class="title">SIMULATION</h3>
-              <p class="title">Vitae sapien pellentesque habitant morbi <br>
-nunc. Viverra aliquet  porttitor rhoncus <br>
-libero justo laoreet sit amet vitae.</p>
-            </div>
-            <div class="card6">
-              <img class="img" src="./Mask group (2).jpg" alt="">
-              <h3 class="title">SIMULATION</h3>
-              <p class="title">Vitae sapien pellentesque habitant morbi <br>
-nunc. Viverra aliquet  porttitor rhoncus <br>
-libero justo laoreet sit amet vitae.</p>
-            </div>
-            <div class="card6">
-              <img class="img" src="./Mask group (3).jpg" alt="">
-              <h3 class="title">SIMULATION</h3>
-              <p class="title">Vitae sapien pellentesque habitant morbi <br>
-nunc. Viverra aliquet  porttitor rhoncus <br>
-libero justo laoreet sit amet vitae.</p>
-            </div>
-            <div class="card6">
-              <img class="img" src="./Mask group (5).jpg" alt="">
-              <h3 class="title">SIMULATION</h3>
-              <p class="title">Vitae sapien pellentesque habitant morbi <br>
-nunc. Viverra aliquet  porttitor rhoncus <br>
-libero justo laoreet sit amet vitae.</p>
-            </div>
-            </div>
-          </div>
-      </section>
-      <section class="name">
-        <div class="container">
-          <div class="name__wrapper">
-            <div class="card7">
-            <h1 class="title">TECHNOLOGIES & HARDWARE</h1>
-            <h3 class="title">USED BY HYDRA VR.</h3>
-          </div>
-          <div class="card">
-            <div><img src="" alt="">
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="end">
-        <div class="container">
-          <div class="end__wrapper">
-            <div class="card3">
-              <div>
-              <div><h1 class="title">HOW WE BUILD</h1></div>
-              <div class="cu">
-                <div><h3 class="title">WITH HYDRA?</h3></div>
-                <div><img src="./Component 1.svg" alt=""></div>
-              </div>
-              </div>
-              <div><p class="title">Vitae sapien pellentesque habitant morbi tristique senectus et netus et. Feugiat <br>
-nibh sed pulvinar proin gravida hendrerit lectus. Mi sit amet mauris commodo <br>
-quis imperdiet massa tincidunt nunc. Viverra aliquet eget sit amet tellus. Ornare <br>
-lectus sit amet est placerat in. Lectus magna fringilla urna porttitor rhoncus vitae.</p></div>
-            </div>
-          </div>
-        </div>
-      </section>
-        <section class="footer">
-<tfoot>
-<div class="container">
-<div class="tfoot__wrapper">
-<div>
-<img src="./Vector.svg" alt="">
-<p>Lorem Ipsum is simply dummy text of <br> the printing and typesetting industry. Lorem <br>Ipsum has been the industry's standard <br> dummy</p>
+      </div>
+    </section>
 
 
-</div>
-<div>
-<h3>Quick Link</h3>
-<ul>
-<li><a href="#">home</a></li>
-<li><a href="#">Products</a></li>
-<li><a href="#">About Us</a></li>
-</ul>
-</div>
-<div>
-<h3>Contact Us</h3>
-<a href="#">oyasimnaeem@email.com</a>
-<a href="#">+123456789</a>
+    <!-- CONTACT -->
+    <section class="contact container" id="contact">
+
+      <div class="contact-box">
+
+        <div>
+          <p class="eyebrow">READY TO ENTER?</p>
+          <h2>BUILD YOUR <span>WORLD</span></h2>
+          <p>
+            Have an idea or want to learn more about HYDRA?
+            Send us a message.
+          </p>
+        </div>
+
+        <form>
+          <div class="form-row">
+            <input type="text" placeholder="Your name" />
+            <input type="email" placeholder="Your email" />
+          </div>
+
+          <input type="text" placeholder="Subject" />
+
+          <textarea placeholder="Your message"></textarea>
+
+          <button class="btn btn-primary" type="submit">
+            SEND MESSAGE →
+          </button>
+        </form>
+
+      </div>
+    </section>
+
+  </main>
+
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container footer">
+
+      <div class="footer-logo">
+        <span class="logo-icon">H</span>
+        <strong>HYDRA</strong>
+      </div>
+```
 
 
 </div>
